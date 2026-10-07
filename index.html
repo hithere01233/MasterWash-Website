@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <title>Masterwash Laundromat | Self-Service Laundromat in Christchurch</title>
+    <meta
+      name="description"
+      content="Self-service laundromat in Parklands, Christchurch. Open 24 hours, 7 days."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400..700&family=Urbanist:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/logo.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body class="loading">
+    <!-- Loader -->
+    <div id="loader">
+      <img src="images/logo.jpg" alt="" />
+      <div class="bar"><span></span></div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap">
+        <h1>Clean clothes,<br />without the wait.</h1>
+        <p>
+          Self-service laundry at Masterwash Laundromat, Parklands, Christchurch. Open 24 hours, 7
+          days.
+        </p>
+        <a class="btn" href="find-us.html">Find us</a>
+        <a class="btn ghost" href="services.html">See services</a>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section>
+      <div class="wrap center">
+        <h2 class="reveal">Everything you need to get it done.</h2>
+        <div class="grid stagger">
+          <article class="tile">
+            <div class="media" data-label="Photo: washers"></div>
+            <h3>Washers</h3>
+            <p>Large drums for everyday loads and family-size piles.</p>
+          </article>
+          <article class="tile">
+            <div class="media" data-label="Photo: dryers"></div>
+            <h3>Dryers</h3>
+            <p>Fast, even drying so you are out the door sooner.</p>
+          </article>
+          <article class="tile">
+            <div class="media" data-label="Photo: duvet or big load"></div>
+            <h3>Big loads</h3>
+            <p>Duvets, blankets and bedding that will not fit at home.</p>
+          </article>
+          <article class="tile">
+            <div class="media" data-label="Photo: shop front at night"></div>
+            <h3>Always open</h3>
+            <p>Open 24 hours, 7 days a week, so you can wash whenever suits you.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase -->
+    <section class="dark">
+      <div class="wrap">
+        <h2 class="reveal center mb-lg">Built for big loads.</h2>
+        <div class="showcase">
+          <div class="showcase-model">
+            <model-viewer
+              id="machine"
+              data-src="models/washer.glb"
+              alt="Commercial washing machine"
+              disable-zoom
+              disable-pan
+              touch-action="pan-y"
+              interaction-prompt="none"
+              shadow-intensity="1"
+              exposure="1.05"
+              camera-orbit="0deg 75deg 105%"
+            ></model-viewer>
+          </div>
+          <div>
+            <div class="step active" data-orbit="0deg 75deg 105%">
+              <h3>Drums that fit a whole duvet.</h3>
+              <p>Wash a king-size duvet in one go, with room to spare.</p>
+            </div>
+            <div class="step" data-orbit="90deg 75deg 105%">
+              <h3>Commercial strength.</h3>
+              <p>Machines made to run all day and get clothes properly clean.</p>
+            </div>
+            <div class="step" data-orbit="180deg 60deg 120%">
+              <h3>Simple controls.</h3>
+              <p>Choose a cycle, pay, press start. That is all there is to it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit -->
+    <section class="tint">
+      <div class="wrap center reveal">
+        <h2>Come and see us.</h2>
+        <p class="lead">11/60 Queenspark Drive, Parklands. Open 24 hours, 7 days.</p>
+        <div class="mt-md"><a class="btn" href="find-us.html">Get directions</a></div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <title>Contact | Masterwash Laundromat</title>
+    <meta name="description" content="Get in touch with Masterwash Laundromat." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400..700&family=Urbanist:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/logo.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Hero -->
+    <section class="hero short">
+      <div class="wrap">
+        <h1>Contact</h1>
+        <p>Questions, feedback or lost property? Get in touch.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <div class="wrap split reveal">
+        <div>
+          <h2>Talk to us.</h2>
+          <p>Phone: 022 311 9700</p>
+          <p>Email: hellomasterwash@gmail.com</p>
+          <p>11/60 Queenspark Drive, Parklands, Christchurch 8083</p>
+        </div>
+        <!-- Form -->
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="text" name="name" placeholder="Your name" aria-label="Your name" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email"
+            aria-label="Your email"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="How can we help?"
+            aria-label="Message"
+            required
+          ></textarea>
+          <button class="btn" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
